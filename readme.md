@@ -27,7 +27,7 @@ This project includes an 3D text and donuts with different sizes arount it. You 
 
 ## 🚀 Demo
 
-[🔗 3D Text]()
+[🔗 3D Text](https://3-d-text-three-js-nine.vercel.app)
 
 ---
 
@@ -36,7 +36,7 @@ This project includes an 3D text and donuts with different sizes arount it. You 
 1. **Clone the repository**
 
 ```bash
-git clone git@github.com:muzeffer-niftiyev/Tic-Tac-Toe-MVC.git
+git clone git@github.com:muzeffer-niftiyev/3D-Text-Three.js.git
 ```
 
 2. **Install Dependencies**
@@ -52,24 +52,5 @@ git clone git@github.com:muzeffer-niftiyev/Tic-Tac-Toe-MVC.git
    On your terminal simply add this command.
 
 ```bash
-   npm start
-```
-
-
-
-
-
-
-
-Run this followed commands:
-
-``` bash
-# Install dependencies (only the first time)
-npm install
-
-# Run the local server at localhost:8080
-npm run dev
-
-# Build for production in the dist/ directory
-npm run build
+   npm run dev
 ```
