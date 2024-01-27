@@ -6,7 +6,9 @@ import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 
 const gui = new GUI({
   title: "Debug UI",
+  width: 300,
 });
+
 const canvas = document.querySelector("canvas.webgl");
 const scene = new THREE.Scene();
 
@@ -23,7 +25,7 @@ const matcapsArr = [
 ];
 
 const parameters = {
-  matcap: 1,
+  matcap: 8,
 };
 
 const updateAllMaterials = () => {
@@ -67,10 +69,11 @@ fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
   const material = new THREE.MeshMatcapMaterial({
     matcap: matcapsArr[parameters.matcap - 1],
   });
+  material.matcap.colorSpace = THREE.SRGBColorSpace;
+
   const text = new THREE.Mesh(textGeometry, material);
   scene.add(text);
   gui.add(text, "visible").name("Text Visibility");
-
   const donutGeometry = new THREE.TorusGeometry(0.4, 0.3, 30, 85);
 
   for (let i = 0; i < 300; i++) {
