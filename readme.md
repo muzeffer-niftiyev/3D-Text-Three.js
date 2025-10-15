@@ -41,7 +41,7 @@ git clone git@github.com:muzeffer-niftiyev/3D-Text-Three.js.git
 
 2. **Install Dependencies**
    
-   Run this command at terminat of the project.
+   Run this command at terminal of the project.
 
 ```bash
     npm install
